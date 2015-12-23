@@ -1,32 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
     <title>Data101 Final Project/Wells Fargo Competition by ReeceNelson</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-dark.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
+
+    <header>
+      <div class="container">
         <h1>Data101 Final Project/Wells Fargo Competition</h1>
-        <p>By Reece Nelson</p>
-        <p class="view"><a href="https://github.com/ReeceNelson/Data101Final">View the Project on GitHub <small>ReeceNelson/Data101Final</small></a></p>
-        <ul>
-          <li><a href="https://github.com/ReeceNelson/Data101Final/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/ReeceNelson/Data101Final/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/ReeceNelson/Data101Final">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
+        <h2>By Reece Nelson</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/ReeceNelson/Data101Final/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/ReeceNelson/Data101Final/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/ReeceNelson/Data101Final" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
         <h1>
 <a id="approach-and-methodology" class="anchor" href="#approach-and-methodology" aria-hidden="true"><span class="octicon octicon-link"></span></a>Approach and Methodology:</h1>
 
@@ -54,10 +55,10 @@ For a larger image of the Analytic Process Flowchart click <a href="https://www.
 <ul>
 <li>FinalScript.R includes code to get term frequency from terms that appear at least 3000 times, shown in histogram.</li>
 <li>score.sentiment() function uses laply() to iterate through the input text. It strips punctuation and control characters from each line using R’s regular expression-powered substitution function, gsub(), and uses match() against each word list to find matches; taken from (<a href="http://www.inside-r.org/howto/mining-twitter-airline-consumer-sentiment">http://www.inside-r.org/howto/mining-twitter-airline-consumer-sentiment</a>) utilizes Hu and Liu's "opinion lexicon," which categorizes words as positive or negative found at (<a href="http://www.cs.uic.edu/%7Eliub/FBS/opinion-lexicon-English.rar">http://www.cs.uic.edu/~liub/FBS/opinion-lexicon-English.rar</a>)</li>
-<li>FinalScript.R also includes the code that gives all the sentiment scores and their percentages for all the banks combined as well as each individual bank to be displayed in histograms and stacked bar graphs.
-The entire code can be found <a href="http://codepad.org/swGnVQD8">Here</a>
-</li>
+<li>FinalScript.R also includes the code that gives all the sentiment scores and their percentages for all the banks combined as well as each individual bank to be displayed in histograms and stacked bar graphs.</li>
 </ul>
+
+<p>The entire code can be found <a href="http://codepad.org/swGnVQD8">Here</a></p>
 
 <h1>
 <a id="list-of-topics-and-substance-found" class="anchor" href="#list-of-topics-and-substance-found" aria-hidden="true"><span class="octicon octicon-link"></span></a>List of topics and substance found</h1>
@@ -142,11 +143,7 @@ After seeing these percentages and making these observations I wondered how thes
 <p>Another use for this information could be improvements. Each bank now knows what people think about them and they dislike the most about each bank. The banks could look at the data and see what areas and topics they could improve on to drive more positive posts made about them.</p>
       </section>
     </div>
-    <footer>
-      <p>Project maintained by <a href="https://github.com/ReeceNelson">ReeceNelson</a></p>
-      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
-    </footer>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+
     
   </body>
 </html>
